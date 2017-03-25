@@ -84,7 +84,7 @@ public class Sorting {
         for (int i = 0; i < n; i++) {
             a[i] = scanner.nextInt();
         }
-        randomizedQuickSort(a, 0, n - 1);
+        randomizedQuickSort3(a, 0, n - 1);
         for (int i = 0; i < n; i++) {
             System.out.print(a[i] + " ");
         }

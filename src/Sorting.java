@@ -66,6 +66,16 @@ public class Sorting {
         if (l >= r) {
             return;
         }
+
+        boolean ordered = true;
+        for (int i=l; i < r; i++) {
+            if (a[i] > a[i + 1]) {
+                ordered = false;
+                break;
+            }
+        }
+        if (ordered) return;
+
         int k = random.nextInt(r - l + 1) + l;
         int t = a[l];
         a[l] = a[k];
